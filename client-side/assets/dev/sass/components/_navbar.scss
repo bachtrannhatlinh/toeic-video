@@ -1,0 +1,65 @@
+.gl-header {
+    #search-suggestions {
+        max-height: 300px;
+    }
+    .left-content,
+    .right-content {
+        width: 200px;
+    }
+
+    .center-content {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    i.fa-bell {
+        font-size: 20px;
+    }
+
+    .notify-banner {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(10px, -8px);
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    #showNotify {
+        width: 500px;
+    }
+}
+
+.navbar-mobile {
+    &__header {
+        input {
+            width: 150px;
+
+            @include respond-to(min-md) {
+                width: 200px;
+            }
+        }
+    }
+
+    a.w-20 {
+        font-size: 10px;
+
+        i {
+            font-size: 16px;
+        }
+    }
+
+    #searchResultOnMobile {
+        max-height: 260px;
+    }
+}
+
+#userInfoOnMobile {
+    min-width: 290px;
+
+    @include respond-to(min-sm) {
+        min-width: 400px;
+    }
+}

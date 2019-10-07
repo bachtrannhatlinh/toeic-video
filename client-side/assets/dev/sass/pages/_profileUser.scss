@@ -1,0 +1,16 @@
+.profileUser{
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .editButton{
+        button{
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}

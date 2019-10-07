@@ -1,0 +1,135 @@
+.watch-later{
+    .pictureFirst{
+        img{
+            height: 200px;
+            width: 100%;
+        }
+    }
+    .max-height{
+        height: calc(100vh - 56px);
+        overflow-y: auto; 
+    }
+    .pictureSecond{
+        img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+    .font-size-4h{
+        font-size: 4px;
+    }
+    .pictureThird{
+        img{
+            height: 65px;
+            width: 130px;;
+        }
+    }
+    .editPosition{
+        position: relative;
+        .content{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+    }
+    .cucursor-pointer{
+        cursor: pointer;
+    }
+    // background-color
+    .background-color-hsla{
+        background-color: hsla(0, 0%, 6.7%, .8);
+    }
+    .background-color-ededed{
+        background-color: #ededed;
+    }
+    .background-color-fafafa{
+        background-color: #fafafa;
+    }
+    .background-color-white{
+        background-color: white;
+    }
+    //color
+    .color-606060{
+        color: #606060;
+    }
+    .color-black{
+        color: black;
+    }
+    //transition
+    .transition{
+        position: relative;
+        transition-delay: 1s;
+        &:hover{
+            &::after{
+                position: absolute;
+                content: 'Phát Ngẫu Nhiên';
+                background-color: #606060;
+                top: 30px;
+                left: 0;
+                color: white;
+                font-size: 16px;
+                padding: 5px;
+                width: 140px;
+            }
+        }
+    }
+    //changeHover
+    .changeHoverBackground-color{
+        position: relative;
+        &:hover{
+            background-color: #f5f5f5;
+            &::after{
+                position: absolute;
+                content: '\2807';
+                top: 30%;
+                right: 10px;
+                color: black;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .watch-later{
+        .pictureFirst{
+            img{
+                height: 150px;
+                width: 200px;
+            }
+        }
+        .max-height{
+            height: unset;
+        }
+    }
+    .border-bottom-1025{
+        border-bottom: solid 1px;
+        border-color: #bababa;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .watch-later{
+        .pictureFirst{
+            img{
+                height: 150px;
+                width: 200px;
+            }
+        }
+        .max-height{
+            height: unset;
+        }
+        .background-color-white{
+            background-color: white;
+        }
+        .background-color-fafafa{
+            background-color: #fafafa;
+        }
+    }
+    .border-bottom-1025{
+        border-bottom: solid 1px;
+        border-color: #bababa;
+    }
+}

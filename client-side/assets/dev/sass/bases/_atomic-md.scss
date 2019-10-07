@@ -1,0 +1,21 @@
+@include respond-to(min-md) {
+    .font-md-24 {
+        font-size: 24px;
+    }
+
+    .font-md-16 {
+        font-size: 16px;
+    }
+
+    .font-md-14 {
+        font-size: 14px;
+    }
+
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .w-md-50 {
+        width: 50% !important;
+    }
+}

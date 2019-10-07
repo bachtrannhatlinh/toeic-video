@@ -1,0 +1,370 @@
+.history{
+    .imgFirst{
+        height: 150px;
+        width: 250px;
+    }
+    .max-height{
+        height: calc(100vh - 56px);
+        overflow-y: auto; 
+    }
+}
+
+//background-color
+.background-color-fafafa{
+    background-color: #fafafa;
+}
+.background-color-f1f1f1{
+    background-color: #f1f1f1;
+}
+
+//color
+.color-606060{
+    color: #606060;
+}
+
+.color-ff0000{
+    color: #ff0000;
+}
+
+//change
+.changePlaceholder{
+    position: relative;
+    input{
+        width: 100%;
+        padding: 0px 40px 0px 40px;
+    }
+}
+.changeStyleInput{
+    font-size: 12px;
+    height: 100%;
+}
+
+// changeHover
+.changeHover{
+    position: relative;
+    &:hover{
+        .changeHoverKidFirst{
+            position: absolute;
+            display: block;
+            left: 222px;
+            top: 5px;
+            background-image: url(/images-asset/nhatlinh/baseline_query_builder_black_24dp.png);
+            background-repeat: no-repeat;
+            z-index: 2;
+            font-size: 20px;
+            height: 25px;
+            width: 25px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .changeHoverKidSecond{
+            position: absolute;
+            display: block;
+            right: 0;
+            top: 0;
+                background-image: url(/images-asset/nhatlinh/baseline_clear_black_24dp.png);
+                background-repeat: no-repeat;
+                z-index: 2;
+                font-size: 20px;
+                height: 25px;
+                width: 25px;
+                background-color: #fafafa;
+                cursor: pointer;
+            }
+        }
+    }
+
+    //đefault 
+    .default{
+        position: relative;
+        .defaultRedBar{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            height: 3px;
+            background-color: red;
+            width: 25%;
+        }
+        .defaultTime{
+            position: absolute;
+            background-color: #000;
+            height: 18px;
+            width: 40px;
+            left: 23%;
+            bottom: 5px;
+            text-align: center;
+            &::before{
+                position: absolute;
+                content: '3:33';
+                color: #fff;
+                font-size: 13px;
+                font-weight: 500;
+                right: 7px;
+                bottom: 0px;
+            }
+        }
+    }
+
+//edit
+.editPosition{
+    position: relative;
+    .editIcon{
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        z-index: 2;
+        font-size: 17px;
+        color: #bababa;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .history{
+        .margin-left-auto{
+            margin-left: auto;
+        }
+        .background-color-f8f8f8{
+            background-color: #f8f8f8;
+        }
+        .boder-color-s1-ebebeb{
+            border: solid 1px;
+            border-color: #ebebeb;
+        }
+
+        //change
+        .changePlaceholder{
+            position: relative;
+            input{
+                font-size: 10px;
+                width: 100%;
+                padding: 0px 40px 0px 40px;
+            }
+        }
+        .editPosition{
+            position: relative;
+            .editIcon{
+                position: absolute;
+                top: 30%;
+                left: 5%;
+                z-index: 2;
+                font-size: 13px;
+                color: #bababa;
+            }
+        }
+        .max-height{
+            height: calc(100vh - 55px);
+            overflow-y: auto;
+        }
+        .font-size-12lg{
+            font-size: 12px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .history{
+        //change
+        .imgFirst{
+            height: 100px;
+            width: 150px;
+        }
+        .background-color-f8f8f8{
+            background-color: #f8f8f8;
+        }
+        .boder-color-s1-ebebeb{
+            border: solid 1px;
+            border-color: #ebebeb;
+        }
+        .margin-left-auto{
+            margin-left: auto;
+        }
+        .changePlaceholder{
+            position: relative;
+            input{
+                font-size: 10px;
+                width: 100%;
+                padding: 0px 30px 0px 30px;
+            }
+        }
+
+        //đefault 
+        .default{
+            position: relative;
+            .defaultRedBar{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                content: '';
+                height: 3px;
+                background-color: red;
+                width: 20%;
+            }
+            .defaultTime{
+                position: absolute;
+                background-color: #000;
+                height: 18px;
+                width: 50px;
+                left: 97px;
+                bottom: 5px;
+                text-align: center;
+                &::before{
+                    position: absolute;
+                    content: '3:33';
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 500;
+                    right: 12px;
+                    bottom: 1px;
+                }
+            }
+        }
+    .padding-left{
+        padding-left: 0;
+    }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .history{
+        //change
+        .imgFirst{
+            height: 100px;
+            width: 100%;
+        }
+        .changeWidthButton{
+            width: 100%;
+        }
+
+        .changePlaceholder{
+            position: relative;
+            input{
+                width: 100%;
+                padding: 0px 0px 0px 30px;
+                font-size: 12px;
+            }
+        }
+
+        .changeStyleInput{
+            font-size: 16px;
+            height: 100%;
+        }
+
+        //edit
+        .editPosition{
+            position: relative;
+            .editIcon{
+                position: absolute;
+                top: 30%;
+                left: 4%;
+                z-index: 2;
+                font-size: 13px;
+                color: #bababa;
+            }
+        }
+
+        //đefault 
+        .default{
+            position: relative;
+            .defaultRedBar{
+                position: absolute;
+                left: 0;
+                bottom: 106px;
+                content: '';
+                height: 3px;
+                background-color: red;
+                width: 20%;
+            }
+            .defaultTime{
+                position: absolute;
+                background-color: #000;
+                height: 18px;
+                width: 50px;
+                left: 303px;
+                bottom: 113px;
+                text-align: center;
+                &::before{
+                    position: absolute;
+                    content: '3:33';
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 500;
+                    right: 12px;
+                    bottom: 1px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .history{
+        //đefault 
+        .default{
+            position: relative;
+            .defaultRedBar{
+                position: absolute;
+                left: 0;
+                bottom: 121px;
+                content: '';
+                height: 3px;
+                background-color: red;
+                width: 20%;
+            }
+            .defaultTime{
+                position: absolute;
+                background-color: #000;
+                height: 18px;
+                width: 50px;
+                left: 255px;
+                bottom: 125px;
+                text-align: center;
+                &::before{
+                    position: absolute;
+                    content: '3:33';
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 500;
+                    right: 12px;
+                    bottom: 1px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .history{
+        //đefault 
+        .default{
+            position: relative;
+            .defaultRedBar{
+                position: absolute;
+                left: 0;
+                bottom: 121px;
+                content: '';
+                height: 3px;
+                background-color: red;
+                width: 20%;
+            }
+            .defaultTime{
+                position: absolute;
+                background-color: #000;
+                height: 18px;
+                width: 50px;
+                left: 200px;
+                bottom: 125px;
+                text-align: center;
+                &::before{
+                    position: absolute;
+                    content: '3:33';
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 500;
+                    right: 12px;
+                    bottom: 1px;
+                }
+            }
+        }
+    }
+}

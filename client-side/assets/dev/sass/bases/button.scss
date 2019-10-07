@@ -1,0 +1,34 @@
+.gl-btn {
+    &__videos {
+        background: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        color: #fff;
+        i {
+            font-size: 14px;
+        }
+        &__subs {
+            height: 45px;
+            border: 0;
+            color: #fff;
+            background: #428b23;
+            &.active,
+            &:hover {
+                background: orange;
+            }
+        }
+    }
+    &__top-videos {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    &__hover:hover {
+        color: #f5d13f;
+        border-color: #f5d13f;
+    } 
+}
